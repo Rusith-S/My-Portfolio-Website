@@ -28,3 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
     seeMoreBtn.addEventListener('click', showMoreProjects);
     showLessBtn.addEventListener('click', showLessProjects);
 });
+
+
+
+
