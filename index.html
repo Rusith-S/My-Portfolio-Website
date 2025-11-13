@@ -1,77 +1,79 @@
 <!DOCTYPE html>
-<html lang="en" lang="en">
-    <head>
-        <meta charset=utf-8>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width", intial-scale="1.0">
-        <link rel="icon" href="images/logo.png" type="image/png">
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <link rel="stylesheet" href="styles.css">
-        <script src="https://kit.fontawesome.com/48c23fc601.js" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <script src="certification.js"></script>
-        <script src="projects.js"></script>
-        <script src="letter_animation.js"></script>
-        <script src="sidemenu.js"></script>
-        <script src="tabs.js"></script>
-        <script src="contact.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/48c23fc601.js" crossorigin="anonymous"></script>
+    <script src="/JS Files/certification.js"></script>
+    <script src="/JS Files/contact.js"></script>
+    <script src="/JS Files/letter_animation.js"></script>
+    <script src="/JS Files/menu.js"></script>
+    <script src="/JS Files/projects.js"></script>
+    <script src="/JS Files/sidemenu.js"></script>
+    <script src="/JS Files/tabs.js"></script>
+    <title>Rusith Portfolio</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#header"><img src="images/Header/Logo.png" class="logo" alt="Logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Insights</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
 
-        <title>
-            Rusith Portfolio
-        </title>
-
-    </head>
-    <body>
-        <div id="header">
-            <div class="container">
-                <nav>
-                    <a href="#header"><img src="images/download (1).png" class="logo"></a>
-                    <ul id="sidemenu">
-                        <li><a href="#header">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Insights</a></li>
-                        <li><a href="#portfolio">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                    </ul>
-                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-                </nav>
-
-            
-                <div class="header-text"> <h1>Hi, I'm <span class="typing-animation">R</span><span class="typing-animation">u</span><span class="typing-animation">s</span><span class="typing-animation">i</span><span class="typing-animation">t</span><span class="typing-animation">h&nbsp;</span><span class="typing-animation">S</span><span class="typing-animation">a</span><span class="typing-animation">s</span><span class="typing-animation">h</span><span class="typing-animation">i</span><span class="typing-animation">k</span><span class="typing-animation">a</span><br> From Malabe <!-- <br>Sri Lanka--></h1> <p>Software Quality Engineer</p> </div>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Rusith Sashika</span><br>From Malabe</h1>
+                <p>Associate Software Quality Engineer</p>
             </div>
         </div>
+    </div>
 
-        <!-------about------>
-
-        <div id="about">
+    <!-- ABOUT SECTION -->
+    <div id="about">
         <div class="container">
             <div class="row">
-                <!-- Profile Image -->
                 <div class="about-col-1">
-                    <img src="images/user.png" alt="Profile Picture">
+                    <img src="images/About/My 7.png" alt="Profile Picture">
                 </div>
 
-                <!-- About Content -->
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
                     <p>
                         I am a motivated aspiring Software Quality Engineer with a solid foundation in software testing methodologies, test automation, and defect tracking. Skilled in both teamwork and self-learning, I thrive in collaborative environments and enjoy solving complex problems. I am eager to apply my analytical skills to enhance software reliability, optimize testing processes, and contribute to delivering high-quality user experiences. With a strong attention to detail and a commitment to continuous learning, I aim to drive innovation and ensure excellence in every software product I work on.
                     </p>
 
-                    <!-- Tabs -->
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('experience', event)">Experience</p>
-                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
-                        <p class="tab-links" onclick="opentab('certifications', event)">Certifications</p>
+                        <p class="tab-links active-link" onclick="opentab('experience', event)">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <span>Experience</span>
+                        </p>
+                        <p class="tab-links" onclick="opentab('education', event)">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>Education</span>                         
+                        </p>
+                        <p class="tab-links" onclick="opentab('certifications', event)">
+                            <i class="fa-solid fa-certificate"></i>
+                            <span>Certifications</span>
+                        </p>
                     </div>
 
                     <!-- EXPERIENCE TAB -->
                     <div class="tab-contents active-tab" id="experience">
                         <ul>
                             <li class="item">
-                                <img src="images/swiveltech_logo.jpeg" alt="Swivel Tech Logo" class="item-logo">
+                                <img src="images/About/Experience/swiveltech_logo.jpeg" alt="Swivel Tech Logo" class="item-logo">
                                 <div class="item-details">
                                     <span class="item-title">Intern Software Quality Engineer</span>
                                     <span class="item-subtitle">Swivel Tech</span>
@@ -85,413 +87,438 @@
                     <div class="tab-contents" id="education">
                         <ul>
                             <li class="item">
-                                <img src="images/Sliit.jpg" alt="SLIIT Logo" class="item-logo">
+                                <img src="images/About/Education/Sliit.jpg" alt="SLIIT Logo" class="item-logo">
                                 <div class="item-details">
                                     <span class="item-title">BSc (Hons) in Information Technology</span>
+                                    <span class="item-subtitle">Sri Lanka Institute of Information Technology</span>
                                     <span class="item-date">2021 - 2025</span>
                                 </div>
                             </li>
                             <li class="item">
-                                <img src="images/unnamed.jpg" alt="Advanced Level Logo" class="item-logo">
+                                <img src="images/About/Education/Thurstan.jpg" alt="Advanced Level Logo" class="item-logo">
                                 <div class="item-details">
                                     <span class="item-title">GCE Advanced Level</span>
+                                    <span class="item-subtitle">Thurstan College</span>
                                     <span class="item-date">2020</span>
                                 </div>
                             </li>
                             <li class="item">
-                                <img src="images/unnamed.jpg" alt="Ordinary Level Logo" class="item-logo">
+                                <img src="images/About/Education/Thurstan.jpg" alt="Ordinary Level Logo" class="item-logo">
                                 <div class="item-details">
                                     <span class="item-title">GCE Ordinary Level</span>
+                                    <span class="item-subtitle">Thurstan College</span>
                                     <span class="item-date">2017</span>
                                 </div>
                             </li>
-
                         </ul>
                     </div>
 
                     <!-- CERTIFICATIONS TAB -->
-                <!-- CERTIFICATIONS TAB -->
-                <div class="tab-contents" id="certifications">
-                    <ul class="certification-list" id="certificationList">
-                        <li class="certification-item">
-                            <img src="images/Postman.jpg" class="certification-logo">
-                            <div class="certification-details">
-                                <span class="certificate-title"style="font-size:15px;;">Postman API Fundamentals Student Expert</span>
-                                <span class="certificate-provider" style="font-size:13px;;">Postman</span>
-                                <a href="images/Postman API Fundamentals Student Expert.PNG" target="_blank" class="certificate-link"style="font-size:14px;;">View Certificate ↗</a>
-                            </div>
-                        </li>
-                        <li class="certification-item">
-                            <img src="images/Moratuwa uni.jpg" class="certification-logo">
-                            <div class="certification-details">
-                                <span class="certificate-title" style="font-size:15px;">Python for Beginners</span>
-                                <span class="certificate-provider" style="font-size:13px;">University of Moratuwa</span>
-                                <a href="images/Phython for beginers.png" target="_blank" class="certificate-link" style="font-size:14px;">View Certificate ↗</a>
-                            </div>
-                        </li>
-                        <li class="certification-item">
-                            <img src="images/Moratuwa uni.jpg" class="certification-logo">
-                            <div class="certification-details">
-                                <span class="certificate-title" style="font-size:15px;">Web Design for Beginners</span>
-                                <span class="certificate-provider" style="font-size:13px;">University of Moratuwa</span>
-                                <a href="images/Web design for beginers.png" target="_blank" class="certificate-link" style="font-size:14px;">View Certificate ↗</a>
-                            </div>
-                        </li>
-                        <li class="certification-item">
-                            <img src="images/Mongo DB.jpg" class="certification-logo">
-                            <div class="certification-details">
-                                <span class="certificate-title" style="font-size:15px;">Introduction to MongoDB</span>
-                                <span class="certificate-provider" style="font-size:13px;">MongoDB</span>
-                                <a href="https://learn.mongodb.com/c/dHyr36AsRnSrqerbN7BbNQ" target="_blank" class="certificate-link" style="font-size:14px;">View Certificate ↗</a>
-                            </div>
-                        </li>
-                        <li class="certification-item">
-                            <img src="images/Google.jpg" class="certification-logo">
-                            <div class="certification-details">
-                                <span class="certificate-title" style="font-size:15px;">Fundamentals of Digital Marketing</span>
-                                <span class="certificate-provider" style="font-size:13px;">Google Digital Garage</span>
-                                <a href="https://skillshop.exceedlms.com/student/award/XePQ7YDPfKvRooXR6tAtrP8q" target="_blank" class="certificate-link" style="font-size:14px;">View Certificate ↗</a>
-                            </div>
-                        </li>
-                        <li class="certification-item">
-                            <img src="images/AWS.jpg" class="certification-logo">
-                            <div class="certification-details">
-                                <span class="certificate-title" style="font-size:15px;">AWS Academy Graduate - AWS Academy Cloud Foundations</span>
-                                <span class="certificate-provider" style="font-size:13px;">AWS</span>
-                                <a href="https://www.credly.com/go/6L9EzT0f" target="_blank" class="certificate-link" style="font-size:14px;">View Certificate ↗</a>
-                            </div>
-                        </li>
-                        <li class="certification-item">
-                            <img src="images/sololearn_inc__logo.jpg" class="certification-logo">
-                            <div class="certification-details">
-                                <span class="certificate-title" style="font-size:15px;">Web Development</span>
-                                <span class="certificate-provider" style="font-size:13px;">Sololearn</span>
-                                <a href="images/Sololearn Web Development.jpg" target="_blank" class="certificate-link" style="font-size:14px;">View Certificate ↗</a>
-                            </div>
-                        </li>
-                        <li class="certification-item">
-                            <img src="images/sololearn_inc__logo.jpg" class="certification-logo">
-                            <div class="certification-details">
-                                <span class="certificate-title" style="font-size:15px;">Angular</span>
-                                <span class="certificate-provider" style="font-size:13px;">Sololearn</span>
-                                <a href="images/Sololearn Angular.jpg" target="_blank" class="certificate-link" style="font-size:14px;">View Certificate ↗</a>
-                            </div>
-                        </li>
-                        <li class="certification-item">
-                            <img src="images/hackerrank_logo.jpg" class="certification-logo">
-                            <div class="certification-details">
-                                <span class="certificate-title" style="font-size:15px;">CSS (Basic)</span>
-                                <span class="certificate-provider" style="font-size:13px;">HackerRank</span>
-                                <a href="https://www.hackerrank.com/certificates/a7fa71850cea" target="_blank" class="certificate-link" style="font-size:14px;">View Certificate ↗</a>
-                            </div>
-                        </li>
-                        <li class="certification-item">
-                            <img src="images/sololearn_inc__logo.jpg" class="certification-logo">
-                            <div class="certification-details">
-                                <span class="certificate-title" style="font-size:15px;">Introduction to Java</span>
-                                <span class="certificate-provider" style="font-size:13px;">Sololearn</span>
-                                <a href="images/Sololearn Introduction to Java.jpg" target="_blank" class="certificate-link" style="font-size:14px;">View Certificate ↗</a>
-                            </div>
-                        </li>
-                        <li class="certification-item">
-                            <img src="images/sololearn_inc__logo.jpg" class="certification-logo">
-                            <div class="certification-details">
-                                <span class="certificate-title" style="font-size:15px;">Introduction to JavaScript</span>
-                                <span class="certificate-provider" style="font-size:13px;">Sololearn</span>
-                                <a href="images/Sololearn introduction to Javascript.jpg" target="_blank" class="certificate-link" style="font-size:14px;">View Certificate ↗</a>
-                            </div>
-                        </li>
-                        <li class="certification-item">
-                            <img src="images/sololearn_inc__logo.jpg" class="certification-logo">
-                            <div class="certification-details">
-                                <span class="certificate-title" style="font-size:15px;">Introduction to Python</span>
-                                <span class="certificate-provider" style="font-size:13px;">Sololearn</span>
-                                <a href="images/Sololearn Introduction to Python.jpg" target="_blank" class="certificate-link" style="font-size:14px;">View Certificate ↗</a>
-                            </div>
-                        </li>
-                        <li class="certification-item">
-                            <img src="images/sololearn_inc__logo.jpg" class="certification-logo">
-                            <div class="certification-details">
-                                <span class="certificate-title" style="font-size:15px;">Introduction to SQL</span>
-                                <span class="certificate-provider" style="font-size:13px;">Sololearn</span>
-                                <a href="images/Sololearn Introduction to SQL.jpg" target="_blank" class="certificate-link" style="font-size:14px;">View Certificate ↗</a>
-                            </div>
-                        </li>
-                        <li class="certification-item">
-                            <img src="images/sololearn_inc__logo.jpg" class="certification-logo">
-                            <div class="certification-details">
-                                <span class="certificate-title" style="font-size:15px;">Java intermediate</span>
-                                <span class="certificate-provider" style="font-size:13px;">Sololearn</span>
-                                <a href="images/Sololearn Java Intermediate.jpg" target="_blank" class="certificate-link" style="font-size:14px;">View Certificate ↗</a>
-                            </div>
-                        </li>
-                        <li class="certification-item">
-                            <img src="images/hackerrank_logo.jpg" class="certification-logo">
-                            <div class="certification-details">
-                                <span class="certificate-title" style="font-size:15px;">JavaScript (Basic)</span>
-                                <span class="certificate-provider" style="font-size:13px;">HackerRank</span>
-                                <a href="https://www.hackerrank.com/certificates/29a9181dcb8b" target="_blank" class="certificate-link" style="font-size:14px;">View Certificate ↗</a>
-                            </div>
-                        </li>
-                        <li class="certification-item">
-                            <img src="images/hackerrank_logo.jpg" class="certification-logo">
-                            <div class="certification-details">
-                                <span class="certificate-title" style="font-size:15px;">SQL (Intermediate)</span>
-                                <span class="certificate-provider" style="font-size:13px;">HackerRank</span>
-                                <a href="https://www.hackerrank.com/certificates/6d92c1f5c6c7" target="_blank" class="certificate-link" style="font-size:14px;">View Certificate ↗</a>
-                            </div>
-                        </li>
-                        <li class="certification-item">
-                            <img src="images/IEEE.png" class="certification-logo">
-                            <div class="certification-details">
-                                <span class="certificate-title" style="font-size:15px;">Cyber Security Online Workshop Series</span>
-                                <span class="certificate-provider" style="font-size:13px;">IEEE Computer Society of SLIIT</span>
-                                <a href="images/Cyber security online workshop.jpeg" target="_blank" class="certificate-link" style="font-size:14px;">View Certificate ↗</a>
-                            </div>
-                        </li>
+                    <div class="tab-contents" id="certifications">
+                        <ul class="certification-list" id="certificationList">
+                            <li class="certification-item">
+                                <img src="images/About/Certifications/Postman.jpg" class="certification-logo" alt="Postman">
+                                <div class="certification-details">
+                                    <span class="certificate-title">Postman API Fundamentals Student Expert</span>
+                                    <span class="certificate-provider">Postman</span>
+                                    <a href="images/About/Certifications/Postman API Fundamentals Student Expert.PNG" target="_blank" class="certificate-link">View Certificate</a>
+                                </div>
+                            </li>
+                            <li class="certification-item">
+                                <img src="images/About/Certifications/Moratuwa uni.jpg" class="certification-logo" alt="University of Moratuwa">
+                                <div class="certification-details">
+                                    <span class="certificate-title">Python for Beginners</span>
+                                    <span class="certificate-provider">University of Moratuwa</span>
+                                    <a href="images/About/Certifications/Phython for beginers.png" target="_blank" class="certificate-link">View Certificate</a>
+                                </div>
+                            </li>
+                            <li class="certification-item">
+                                <img src="images/About/Certifications/Moratuwa uni.jpg" class="certification-logo" alt="University of Moratuwa">
+                                <div class="certification-details">
+                                    <span class="certificate-title">Web Design for Beginners</span>
+                                    <span class="certificate-provider">University of Moratuwa</span>
+                                    <a href="images/About/Certifications/Web design for beginers.png" target="_blank" class="certificate-link">View Certificate</a>
+                                </div>
+                            </li>
+                            <li class="certification-item">
+                                <img src="images/About/Certifications/Mongo DB.jpg" class="certification-logo" alt="MongoDB">
+                                <div class="certification-details">
+                                    <span class="certificate-title">Introduction to MongoDB</span>
+                                    <span class="certificate-provider">MongoDB</span>
+                                    <a href="https://learn.mongodb.com/c/dHyr36AsRnSrqerbN7BbNQ" target="_blank" class="certificate-link">View Certificate</a>
+                                </div>
+                            </li>
+                            <li class="certification-item">
+                                <img src="images/About/Certifications/Google.jpg" class="certification-logo" alt="Google">
+                                <div class="certification-details">
+                                    <span class="certificate-title">Fundamentals of Digital Marketing</span>
+                                    <span class="certificate-provider">Google Digital Garage</span>
+                                    <a href="https://skillshop.exceedlms.com/student/award/XePQ7YDPfKvRooXR6tAtrP8q" target="_blank" class="certificate-link">View Certificate</a>
+                                </div>
+                            </li>
+                            <li class="certification-item" style="display: none;">
+                                <img src="images/About/Certifications/AWS.jpg" class="certification-logo" alt="AWS">
+                                <div class="certification-details">
+                                    <span class="certificate-title">AWS Academy Graduate - AWS Academy Cloud Foundations</span>
+                                    <span class="certificate-provider">AWS</span>
+                                    <a href="https://www.credly.com/go/6L9EzT0f" target="_blank" class="certificate-link">View Certificate</a>
+                                </div>
+                            </li>
+                            <li class="certification-item" style="display: none;">
+                                <img src="images/About/Certifications/sololearn_inc__logo.jpg" class="certification-logo" alt="Sololearn">
+                                <div class="certification-details">
+                                    <span class="certificate-title">Web Development</span>
+                                    <span class="certificate-provider">Sololearn</span>
+                                    <a href="images/About/Certifications/Sololearn Web Development.jpg" target="_blank" class="certificate-link">View Certificate</a>
+                                </div>
+                            </li>
+                            <li class="certification-item" style="display: none;">
+                                <img src="images/About/Certifications/sololearn_inc__logo.jpg" class="certification-logo" alt="Sololearn">
+                                <div class="certification-details">
+                                    <span class="certificate-title">Angular</span>
+                                    <span class="certificate-provider">Sololearn</span>
+                                    <a href="images/About/Certifications/Sololearn Angular.jpg" target="_blank" class="certificate-link">View Certificate</a>
+                                </div>
+                            </li>
+                            <li class="certification-item" style="display: none;">
+                                <img src="images/About/Certifications/hackerrank_logo.jpg" class="certification-logo" alt="HackerRank">
+                                <div class="certification-details">
+                                    <span class="certificate-title">CSS (Basic)</span>
+                                    <span class="certificate-provider">HackerRank</span>
+                                    <a href="https://www.hackerrank.com/certificates/a7fa71850cea" target="_blank" class="certificate-link">View Certificate</a>
+                                </div>
+                            </li>
+                            <li class="certification-item" style="display: none;">
+                                <img src="images/About/Certifications/sololearn_inc__logo.jpg" class="certification-logo" alt="Sololearn">
+                                <div class="certification-details">
+                                    <span class="certificate-title">Introduction to Java</span>
+                                    <span class="certificate-provider">Sololearn</span>
+                                    <a href="images/About/Certifications/Sololearn Introduction to Java.jpg" target="_blank" class="certificate-link">View Certificate</a>
+                                </div>
+                            </li>
+                            <li class="certification-item" style="display: none;">
+                                <img src="images/About/Certifications/sololearn_inc__logo.jpg" class="certification-logo" alt="Sololearn">
+                                <div class="certification-details">
+                                    <span class="certificate-title">Introduction to JavaScript</span>
+                                    <span class="certificate-provider">Sololearn</span>
+                                    <a href="images/About/Certifications/Sololearn introduction to Javascript.jpg" target="_blank" class="certificate-link">View Certificate</a>
+                                </div>
+                            </li>
+                            <li class="certification-item" style="display: none;">
+                                <img src="images/About/Certifications/sololearn_inc__logo.jpg" class="certification-logo" alt="Sololearn">
+                                <div class="certification-details">
+                                    <span class="certificate-title">Introduction to Python</span>
+                                    <span class="certificate-provider">Sololearn</span>
+                                    <a href="images/About/Certifications/Sololearn Introduction to Python.jpg" target="_blank" class="certificate-link">View Certificate</a>
+                                </div>
+                            </li>
+                            <li class="certification-item" style="display: none;">
+                                <img src="images/About/Certifications/sololearn_inc__logo.jpg" class="certification-logo" alt="Sololearn">
+                                <div class="certification-details">
+                                    <span class="certificate-title">Introduction to SQL</span>
+                                    <span class="certificate-provider">Sololearn</span>
+                                    <a href="images/About/Certifications/Sololearn Introduction to SQL.jpg" target="_blank" class="certificate-link">View Certificate</a>
+                                </div>
+                            </li>
+                            <li class="certification-item" style="display: none;">
+                                <img src="images/About/Certifications/sololearn_inc__logo.jpg" class="certification-logo" alt="Sololearn">
+                                <div class="certification-details">
+                                    <span class="certificate-title">Java Intermediate</span>
+                                    <span class="certificate-provider">Sololearn</span>
+                                    <a href="images/About/Certifications/Sololearn Java Intermediate.jpg" target="_blank" class="certificate-link">View Certificate</a>
+                                </div>
+                            </li>
+                            <li class="certification-item" style="display: none;">
+                                <img src="images/About/Certifications/hackerrank_logo.jpg" class="certification-logo" alt="HackerRank">
+                                <div class="certification-details">
+                                    <span class="certificate-title">JavaScript (Basic)</span>
+                                    <span class="certificate-provider">HackerRank</span>
+                                    <a href="https://www.hackerrank.com/certificates/29a9181dcb8b" target="_blank" class="certificate-link">View Certificate</a>
+                                </div>
+                            </li>
+                            <li class="certification-item" style="display: none;">
+                                <img src="images/About/Certifications/hackerrank_logo.jpg" class="certification-logo" alt="HackerRank">
+                                <div class="certification-details">
+                                    <span class="certificate-title">SQL (Intermediate)</span>
+                                    <span class="certificate-provider">HackerRank</span>
+                                    <a href="https://www.hackerrank.com/certificates/6d92c1f5c6c7" target="_blank" class="certificate-link">View Certificate</a>
+                                </div>
+                            </li>
+                            <li class="certification-item" style="display: none;">
+                                <img src="images/About/Certifications/IEEE.png" class="certification-logo" alt="IEEE">
+                                <div class="certification-details">
+                                    <span class="certificate-title">Cyber Security Online Workshop Series</span>
+                                    <span class="certificate-provider">IEEE Computer Society of SLIIT</span>
+                                    <a href="images/About/Certifications/Cyber security online workshop.jpeg" target="_blank" class="certificate-link">View Certificate</a>
+                                </div>
+                            </li>
+                        </ul>
 
-                </ul>
-
-
-                    <button class="btn" id="loadMoreBtn">Show More</button>
-                    <button class="btn" id="showLessBtn" style="display: none;">Show Less</button>
+                        <button class="btn" id="loadMoreBtn">Show More</button>
+                        <button class="btn" id="showLessBtn" style="display: none;">Show Less</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- SERVICES SECTION -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Areas I Have Learned So Far</h1>
+            <div class="services-list">
+                <div class="service">
+                    <div class="icon-wrapper">
+                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                    </div>
+                    <h2>Software Quality Assurance</h2>
+                    <p>I have gained hands-on experience in software testing, bug tracking, and quality control. My projects helped me ensure applications are reliable, efficient, and meet user requirements.</p>
+                </div>
+                <div class="service">
+                    <div class="icon-wrapper">
+                        <i class="fa fa-cloud" aria-hidden="true"></i>
+                    </div>
+                    <h2>Cloud Computing</h2>
+                    <p>I understand cloud platforms, deployment models, and virtualization. I have explored AWS, Azure, and Google Cloud for scalable, secure, and optimized solutions.</p>
+                </div>
+                <div class="service">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-shield-alt"></i>
+                    </div>
+                    <h2>Computer Security Fundamentals</h2>
+                    <p>I am skilled in network security, encryption, and authentication. I can identify vulnerabilities and implement secure practices to protect data and systems.</p>
+                </div>
+                <div class="service">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-crop"></i>
+                    </div>
+                    <h2>UI/UX Design</h2>
+                    <p>I create intuitive and visually appealing digital experiences. Using wireframes, prototypes, and user research, I design interfaces that enhance usability and engagement.</p>
+                </div>
+                <div class="service">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h2>Front-end Web Development</h2>
+                    <p>I develop responsive and interactive websites using HTML, CSS, and JavaScript. My focus is on seamless user experiences and visually appealing designs.</p>
+                </div>
+                <div class="service">
+                    <div class="icon-wrapper">
+                        <i class="fa fa-code" aria-hidden="true"></i>
+                    </div>
+                    <h2>Back-end Web Development</h2>
+                    <p>I build robust server-side applications using Python and Node.js. My work ensures scalable, secure, and efficient back-end systems for web applications.</p>
+                </div>
+                <div class="service">
+                    <div class="icon-wrapper">
+                        <i class="fa fa-database" aria-hidden="true"></i>
+                    </div>
+                    <h2>Database Management</h2>
+                    <p>I am proficient in MySQL, MongoDB, and Firebase. I design, manage, and query databases to store, organize, and analyze data efficiently.</p>
+                </div>
+                <div class="service">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <h2>Machine Learning & AI</h2>
+                    <p>I design and train machine learning models using TensorFlow and Scikit-learn. I apply AI techniques to analyze data, recognize patterns, and create intelligent solutions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-------Services------>
-
-
-
-            <div id="services">
-                <div class="container">
-                    <h1 class="sub-title">Areas I Have Learned So Far</h1>
-                    <div class="services-list">
-                        <div class="service">
-                            <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                            <h2>Software Quality Assurance</h2>
-                            <p>
-                                I have gained hands-on experience in software testing, bug tracking, and quality control. My projects helped me ensure applications are reliable, efficient, and meet user requirements.
-                            </p>
-                        </div>
-                        <div class="service">
-                            <i class="fa fa-cloud" aria-hidden="true"></i>
-                            <h2>Cloud Computing</h2>
-                            <p>
-                                I understand cloud platforms, deployment models, and virtualization. I have explored AWS, Azure, and Google Cloud for scalable, secure, and optimized solutions.
-                            </p>
-                        </div>
-                        <div class="service">
-                            <i class="fa-solid fa-shield-alt"></i>
-                            <h2>Computer Security Fundamentals</h2>
-                            <p>
-                                I am skilled in network security, encryption, and authentication. I can identify vulnerabilities and implement secure practices to protect data and systems.
-                            </p>
-                        </div>
-                        <div class="service">
-                            <i class="fa-solid fa-crop"></i>
-                            <h2>UI/UX Design</h2>
-                            <p>
-                                I create intuitive and visually appealing digital experiences. Using wireframes, prototypes, and user research, I design interfaces that enhance usability and engagement.
-                            </p>
-                        </div>
-                        <div class="service">
-                            <i class="fa-solid fa-code"></i>
-                            <h2>Front-end Web Development</h2>
-                            <p>
-                                I develop responsive and interactive websites using HTML, CSS, and JavaScript. My focus is on seamless user experiences and visually appealing designs.
-                            </p>
-                        </div>
-                        <div class="service">
-                            <i class="fa fa-code" aria-hidden="true"></i>
-                            <h2>Back-end Web Development</h2>
-                            <p>
-                                I build robust server-side applications using Python and Node.js. My work ensures scalable, secure, and efficient back-end systems for web applications.
-                            </p>
-                        </div>
-                        <div class="service">
-                            <i class="fa fa-database" aria-hidden="true"></i>
-                            <h2>Database Management</h2>
-                            <p>
-                                I am proficient in MySQL, MongoDB, and Firebase. I design, manage, and query databases to store, organize, and analyze data efficiently.
-                            </p>
-                        </div>
-                        <div class="service">
-                            <i class="fa-solid fa-robot"></i>
-                            <h2>Machine Learning & AI</h2>
-                            <p>
-                                I design and train machine learning models using TensorFlow and Scikit-learn. I apply AI techniques to analyze data, recognize patterns, and create intelligent solutions.
-                            </p>
-                        </div>
+    <!-- PROJECTS SECTION -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Projects/Pulse Mind.png" alt="Research Project">
+                    <div class="layer">
+                        <h3>PulseMind: AI-Powered Web System for Children with ADHD</h3>
+                        <p>An AI-powered web system assisting children with ADHD through behavioral assessment and personalized interventions using ML models.</p>
+                        <a href="https://github.com/Rusith-S/adhd-assessment-system.git" target="_blank" title="View on GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Projects/Smart Utills.png" alt="Smart Utils">
+                    <div class="layer">
+                        <h3>Smart Utils Application – Automated Testing</h3>
+                        <p>Developed automated end-to-end test scripts using Playwright, ensuring reliable functionality across browsers and devices.</p>
+                        <a href="https://github.com/IT21342394/SmartUtils.git" target="_blank" title="View on GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Projects/Food Price Tracker.png" alt="Food Price Tracker">
+                    <div class="layer">
+                        <h3>Food Price Tracker Mobile App</h3>
+                        <p>Mobile application using Kotlin and Firebase that provides real-time price information, tracks price changes, and supports secure login.</p>
+                        <a href="https://github.com/Rusith-S/Food-Price-Tracker-Mobile-Application" target="_blank" title="View on GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work" style="display: none;">
+                    <img src="images/Projects/Scout Membership Management System.png" alt="Scout Management">
+                    <div class="layer">
+                        <h3>Scout Membership Management System</h3>
+                        <p>Inventory management system developed with Node.js, Express.js, React.js, and MongoDB for the Colombo District Scout Association.</p>
+                        <a href="https://github.com/Rusith-S/Scout-Membership-Management-System" target="_blank" title="View on GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work" style="display: none;">
+                    <img src="images/Projects/RR Parking Automated Car Parking System.png" alt="RR Parking">
+                    <div class="layer">
+                        <h3>RR Parking Automated Car Parking System</h3>
+                        <p>Web application built with HTML, CSS, PHP, and MySQL that simplifies parking management with authentication and reservation features.</p>
+                        <a href="https://github.com/Rusith-S/RR-Parking-Automated-Car-Parking-System" target="_blank" title="View on GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work" style="display: none;">
+                    <img src="images/Projects/Strategic Risk Management Analysis using Octavia Allegro.png" alt="Strategic Risk Management Analysis using Octavia Allegro">
+                    <div class="layer">
+                        <h3>Strategic Risk Management Analysis using Octavia Allegro</h3>
+                        <p>It defines the risk analysis scope, Octavia Allegro methodology, mitigation plans, and required information security skills.</p>
+                        <a href="images/Projects/IT21291500_IT21290992.pdf" target="_blank" title="View Document">
+                            <i class="fa-solid fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work" style="display: none;">
+                    <img src="images/Projects/Fitness Social Media Platform.png" alt="Fitness Platform">
+                    <div class="layer">
+                        <h3>Fitness Social Media Platform</h3>
+                        <p>RESTful API using Spring Boot and React for user authentication, post management with photo/video uploads, and workout plans.</p>
+                        <a href="https://github.com/Rusith-S/Social-media-platform-tailored-for-fitness-enthusiast" target="_blank" title="View on GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work" style="display: none;">
+                    <img src="images/Projects/Role Based Project Module Management System.png" alt="Module Management">
+                    <div class="layer">
+                        <h3>Role-Based Project Module Management System</h3>
+                        <p>System for university project assessments supporting coordinators, members, examiners, and supervisors with role-based features.</p>
+                        <a href="https://github.com/IT21288326/Module-Management-System" target="_blank" title="View on GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work" style="display: none;">
+                    <img src="images/Projects/Redesign UIs of Blinkee.png" alt="Blinkee Redesign">
+                    <div class="layer">
+                        <h3>Redesign UIs of Blinkee.com</h3>
+                        <p>UI/UX improvement project using Figma for redesign and Mockflow for prototyping, addressing interface and usability issues.</p>
+                        <a href="https://www.figma.com/file/ErsPNlWOxgh2063RvJQbo8/HCI-PROJECT?type=design&node-id=0-1&mode=design" target="_blank" title="View on Figma">
+                            <i class="fa-brands fa-figma"></i>
+                        </a>
                     </div>
                 </div>
             </div>
 
-            <!-- ---------Projects---------- -->
-
-            <div id="portfolio">
-                <div class="container">
-                    <h1 class="sub-title">My Projects</h1>
-                    <div class="work-list">
-                        <div class="work" id="Research Project">
-                            <img src="images/Projects/Research.jpeg">
-                            <div class="layer">
-                                <h3>
-                                    PulseMind: An AI-Powered Web System for Children with ADHD
-                                </h3>
-                                <p>
-                                    PulseMind is an AI-powered web system assisting children aged 5–10 with ADHD through behavioral assessment and personalized interventions. The system classifies ADHD subtypes using ML models (SVM, Random Forest), offers gamified cognitive tasks, focus-enhancement tools, and progress tracking to support children, caregivers, and educators.
-                                </p>
-                                <a href="https://github.com/Rusith-S/adhd-assessment-system.git" target="_blank" title="View on GitHub">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="work" id="smart utills App">
-                            <img src="images/Projects/pexels-divinetechygirl-1181216.jpg">
-                            <div class="layer">
-                                <h3>Smart Utils Application – Automated Testing with Playwright</h3>
-                                <p>Developed and executed automated end-to-end test scripts for the Smart Utils application using Playwright, ensuring reliable functionality across multiple browsers and devices. Designed and implemented robust test scenarios to validate core features, enhance regression testing efficiency, and minimize manual testing effort. Incorporated assertions for UI validation, data integrity checks, and performance monitoring, resulting in improved test coverage and faster release cycles.
-                                </p>
-                                <a href="https://github.com/IT21342394/SmartUtils.git" target="_blank" title="View on GitHub">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="work" id="Food Price Tracker Mobile App">
-                            <img src="images/Projects/food price2.jpeg">
-                            <div class="layer">
-                                <h3>Food Price Tracker Mobile App</h3>
-                                <p>In the 2nd year, 2nd semester of the Mobile Application Development module, a team of four developed the Food Price Tracker Mobile Application using Kotlin and Firebase. Built with Android Studio, the app provides real-time price information for food items, tracks price changes, and supports secure login for store owners and customers.
-                                </p>
-                                <a href="https://github.com/Rusith-S/Food-Price-Tracker-Mobile-Application" target="_blank" title="View on GitHub">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="work">
-                            <img src="images/Projects/freepik__the-style-is-candid-image-photography-with-natural__9215.jpeg">
-                            <div class="layer">
-                                <h3>Scout Membership Management System for Colombo District Scout Association</h3>
-                                <p>In the 2nd year, 2nd semester IT Project module, the team developed an inventory management system with Node.js, Express.js, React.js, SCSS, and MongoDB.
-                                </p>
-                                <a href="https://github.com/Rusith-S/Scout-Membership-Management-System" target="_blank" title="View on GitHub">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    
-                        <div class="work" id="work3" >
-                            <img src="images/Projects/freepik__the-style-is-candid-image-photography-with-natural__79679.jpeg">
-                            <div class="layer">
-                                <h3>RR Parking Automated Car Parking System</h3>
-                                <p>The RR Parking Automated Car Parking System is a collaborative project by five contributors. Built with HTML, CSS, PHP, and MySQL, the web application simplifies parking management with user authentication, CRUD operations, and space reservation features.
-                                </p>
-                                <a href="https://github.com/Rusith-S/RR-Parking-Automated-Car-Parking-System" target="_blank" title="View on GitHub">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="work" id="work4" >
-                            <img src="images/Projects/freepik__the-style-is-candid-image-photography-with-natural__9217.jpeg">
-                            <div class="layer">
-                                <h3>Fitness Social Media Platform</h3>
-                                <p>This project involved developing a RESTful API using Spring Boot for user authentication and post management, including features for photo and video uploads, workout plans, and meal plans. The client-side web application, built with React, provided an intuitive interface for user interactions such as likes and comments.             
-                                </p>
-                                <a href="https://github.com/Rusith-S/Social-media-platform-tailored-for-fitness-enthusiast" target="_blank" title="View on GitHub">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="work" id="work5" style="display: none;">
-                            <img src="images/Projects/freepik__the-style-is-candid-image-photography-with-natural__9214.jpeg">
-                            <div class="layer">
-                                <h3>A Role-Based Project Module Management System</h3>
-                                <p>Developed a Project Module Management System for university project assessments. This system supports roles such as coordinators, members, examiners, and supervisors, with features for managing presentations, reports, marks, and research publications.
-                                </p>
-                                <a href="https://github.com/IT21288326/Module-Management-System" target="_blank" title="View on GitHub">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="work" id="work7" style="display: none;">
-                            <img src="images/Projects/pexels-tranmautritam-326502.jpg">
-                            <div class="layer">
-                                <h3>Redesign UIs of Blinkee.com</h3>
-                                <p>In the 3rd year Human-Computer Interaction module, our project focused on improving UI/UX for Blinkee.com. We used Figma for redesign and Mockflow for prototyping, addressing interface and usability issues to enhance user satisfaction and engagement.</p>
-                                <a href="https://www.figma.com/file/ErsPNlWOxgh2063RvJQbo8/HCI-PROJECT?type=design&node-id=0-1&mode=design" target="_blank" title="View on Figma">
-                                    <i class="fa-brands fa-figma"></i>
-                                </a>
-
-                            </div>
-                        </div>
-                        <div class="work" id="work6" style="display: none;">
-                            <img src="images/Event Management System web application.jpeg">
-                            <div class="layer">
-                                <h3>Event Management System</h3>
-                                <p>This is a group project with four contributors. We
-                                    developed an Event Management System in the 2nd year of the 1st
-                                    semester of the Object Oriented Programming module. In this application,
-                                    we developed Login and Register, basic CRUD operations, and
-                                    calculations.
-                                </p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    
-                    <div class="project-buttons">
-                        <a href="#work3" class="btn see-more-btn">Show more</a>
-                        <a href="#Food Price Tracker Mobile App" class="btn show-less-btn" style="display: none;">Show less</a>
-
-                    </div>
-                </div>
+            <div class="project-buttons">
+                <a href="#" class="btn see-more-btn" id="seeMoreBtn">Show More</a>
+                <a href="#" class="btn show-less-btn" id="showLessBtn2" style="display: none;">Show Less</a>
             </div>
-        
+        </div>
+    </div>
 
-            <!-- ---------Contact Form-------------------------------- -->
-            
-        <div id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="contact-left">
-                        <h1 class="sub-title">Contact Me</h1>
-                        <p><i class="fa-solid fa-envelope"></i> rusithsashika@gmail.com</p>
-                        <p><i class="fa-solid fa-square-phone"></i> +94 70 363 4326</p>
+    <!-- CONTACT SECTION -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p class="contact-item">
+                        <span class="contact-icon-wrapper">
+                            <i class="fa-solid fa-envelope"></i>
+                        </span>
+                        rusithsashika@gmail.com
+                    </p>
+                    <p class="contact-item">
+                        <span class="contact-icon-wrapper">
+                            <i class="fa-solid fa-square-phone"></i>
+                        </span>
+                        +94 70 363 4326
+                    </p>
                     <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/rusith-sashika/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/Rusith-S" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/rusith-sashika/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Rusith-S" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
                     </div>
-                    <a href="images/Rusith Sashika Resume.pdf" download class="btn btn2">Download My Resume</a>
+                    <a href="images/Contact Me/Rusith Sashika Resume.pdf" download class="btn btn2">Download My Resume</a>
                 </div>
 
                 <div class="contact-right">
-                    <form id="contactForm" action="https://formspree.io/f/xqaljbbg" method="POST" name="Portfolio Contact Form">
-                        <input type="text" name="Name" placeholder="Enter Your Name" required>
-                        <div class="error-message" id="nameError">Please enter a valid name (letters only).</div>
+                    <form id="contactForm" name="Portfolio Contact Form">
+                        <div class="form-group">
+                            <label class="form-label">
+                                <i class="fa-solid fa-user"></i>
+                                <span>Name</span>
+                            </label>
+                            <div class="input-wrapper">
+                                <input type="text" name="Name" id="nameInput" placeholder="Enter Your Name" required>
+                            </div>
+                            <div class="error-message" id="nameError">Please enter a valid name (letters only).</div>
+                        </div>
 
-                        <input type="email" name="Email" placeholder="Enter Your E-mail" required>
-                        <div class="error-message" id="emailError">Please enter a valid email.</div>
+                        <div class="form-group">
+                            <label class="form-label">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>Email</span>
+                            </label>
+                            <div class="input-wrapper">
+                                <input type="email" name="Email" id="emailInput" placeholder="Enter Your E-mail" required>
+                            </div>
+                            <div class="error-message" id="emailError">Please enter a valid email.</div>
+                        </div>
 
-                        <input type="text" name="Phone" placeholder="Enter Your Phone Number" required>
-                        <div class="error-message" id="phoneError">Please enter a valid 10-digit phone number.</div>
+                        <div class="form-group">
+                            <label class="form-label">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>Phone</span>
+                            </label>
+                            <div class="input-wrapper">
+                                <input type="number" name="Phone" id="phoneInput" placeholder="Enter Your Phone Number" required>
+                            </div>
+                            <div class="error-message" id="phoneError">Please enter a valid 10-digit phone number.</div>
+                        </div>
 
-                        <textarea name="Message" rows="6" placeholder="Enter your Message" required></textarea>
-                        <div class="error-message" id="messageError">Please enter your message.</div>
+                        <div class="form-group">
+                            <label class="form-label">
+                                <i class="fa-solid fa-message"></i>
+                                <span>Message</span>
+                            </label>
+                            <div class="textarea-wrapper">
+                                <textarea name="Message" id="messageInput" rows="6" placeholder="Enter your Message" required></textarea>
+                            </div>
+                            <div class="error-message" id="messageError">Please enter your message.</div>
+                        </div>
 
-                        <button type="submit" class="btn btn2">Submit</button>
+                        <button type="submit" class="btn btn2 submit-btn">
+                            <span>Submit</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
                     </form>
-
+                    <span id="msg"></span>
                 </div>
-                    
             </div>
         </div>
     </div>
 
-        <div class="copyright">
-            <p>Copyright © 2024 Rusith Sashika <sup>®</sup></p>
-        </div> 
-    </body>
+    <div class="copyright">
+        <p>Copyright © 2024 Rusith Sashika <sup>®</sup></p>
+    </div>
+</body>
 </html>
