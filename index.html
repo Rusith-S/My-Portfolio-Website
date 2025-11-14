@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/logo.png" type="image/png">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/48c23fc601.js" crossorigin="anonymous"></script>
     <title>Rusith Portfolio</title>
@@ -472,7 +473,7 @@
                                 <span>Email</span>
                             </label>
                             <div class="input-wrapper">
-                                <input type="email" name="Email" id="emailInput" placeholder="Enter Your E-mail" required>
+                                <input type="text" name="Email" id="emailInput" placeholder="Enter Your E-mail" required>
                             </div>
                             <div class="error-message" id="emailError">Please enter a valid email.</div>
                         </div>
@@ -482,10 +483,26 @@
                                 <i class="fa-solid fa-phone"></i>
                                 <span>Phone</span>
                             </label>
-                            <div class="input-wrapper">
-                                <input type="number" name="Phone" id="phoneInput" placeholder="Enter Your Phone Number" required>
+                            <div class="phone-input-container">
+                                <div class="country-selector" id="countrySelector">
+                                    <div class="country-selector-trigger">
+                                        <span class="flag-icon flag-icon-lk" id="selectedFlag"></span>
+                                        <span class="country-code" id="selectedCode">+94</span>
+                                        <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                                    </div>
+                                    <div class="country-dropdown" id="countryDropdown">
+                                        <div class="country-search-wrapper">
+                                            <i class="fa-solid fa-search search-icon"></i>
+                                            <input type="text" class="country-search" id="countrySearch" placeholder="Search country...">
+                                        </div>
+                                        <div class="country-list" id="countryList"></div>
+                                    </div>
+                                </div>
+                                <div class="input-wrapper phone-input-wrapper">
+                                    <input type="tel" name="Phone" id="phoneInput" placeholder="Enter Phone Number" required>
+                                </div>
                             </div>
-                            <div class="error-message" id="phoneError">Please enter a valid 10-digit phone number.</div>
+                            <div class="error-message" id="phoneError">Please enter a valid phone number.</div>
                         </div>
 
                         <div class="form-group">
@@ -514,13 +531,14 @@
         <p>Copyright © 2024 Rusith Sashika <sup>®</sup></p>
     </div>
 
-    <script src="js/certification.js"defer></script>
+    <script src="js/countries.js" defer></script>
     <script src="js/certification.js" defer></script>
-<script src="js/contact.js" defer></script>
-<script src="js/letter_animation.js" defer></script>
-<script src="js/menu.js" defer></script>
-<script src="js/projects.js" defer></script>
-<script src="js/sidemenu.js" defer></script>
-<script src="js/tabs.js" defer></script>
+    <script src="js/contact.js" defer></script>
+    <script src="js/letter_animation.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/projects.js" defer></script>
+    <script src="js/sidemenu.js" defer></script>
+    <script src="js/tabs.js" defer></script>
+
 </body>
 </html>
