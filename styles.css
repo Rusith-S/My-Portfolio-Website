@@ -860,6 +860,42 @@ nav ul li a:hover::after{
     box-shadow: 0 15px 40px rgba(30,144,255,0.4);
 }
 
+/* Project Disclaimer */
+.project-disclaimer {
+    background: linear-gradient(135deg, rgba(30,144,255,0.08), rgba(0,191,255,0.05));
+    border: 1px solid rgba(30,144,255,0.3);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin: 24px 0 30px 0;
+    text-align: center;
+}
+
+.project-disclaimer p {
+    margin: 0;
+    font-size: 14px;
+    color: #a8b8c8;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.project-disclaimer i {
+    color: #1e90ff;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .project-disclaimer {
+        padding: 14px 16px;
+        margin: 18px 0 24px 0;
+    }
+    .project-disclaimer p {
+        font-size: 13px;
+    }
+}
+
 /* Project Buttons */
 .project-buttons {
     display: flex;
